@@ -9,7 +9,7 @@ function Logo(props: any) {
         className="rounded-full object-cover"
         width={50}
         height={50}
-        src="https://links.papareact.com/1m8"
+        src="https://placeimg.com/460/460/people"
         alt="logo"
       />
       <>{renderDefault(props)}</>
