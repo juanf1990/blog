@@ -1,21 +1,21 @@
-import {defineConfig, StudioNavbar} from 'sanity'
+import {defineConfig, StudioLogo} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import {myTheme} from './theme'
-import StudioNavBar from './components/StudioNavBar'
+import StudioNavbar from './components/StudioNavbar'
 import Logo from './components/Logo'
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
+const projectId =  process.env.NEXT_PUBLIC_SANITY_PROJECT_ID !
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET !
 
 export default defineConfig({
   basePath: '/studio',
-  name: 'Blog',
-  title: 'Personal Blog',
+  name: 'BLOG',
+  title: 'Personal blog',
+  
   projectId,
   dataset,
-
   plugins: [deskTool(), visionTool()],
 
   schema: {
@@ -24,8 +24,8 @@ export default defineConfig({
   studio: {
     components: {
       logo: Logo,
-      navbar: StudioNavBar,
-    }
+      navbar: StudioNavbar,
+    },
   },
   theme: myTheme,
-});
+})

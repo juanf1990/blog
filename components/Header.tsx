@@ -18,12 +18,9 @@ function Header() {
       </div>
 
       <div>
-        <Link
-          href="/subscribe"
-          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-orange-500 flex items-center rounded-full text-center"
-        >
+        <button className="px-5 py-3 text-sm md:text-base bg-gray-900 text-orange-500 flex items-center rounded-full text-center">
           Subscribe
-        </Link>
+        </button>
       </div>
     </header>
   );
