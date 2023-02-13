@@ -9,32 +9,20 @@ function Header() {
   const router = Router;
 
   return (
-    <header className="flex items-center justify-between space-x-2 font-bold px-10 py-5">
-      <div className="flex items-center space-x-2">
+    <header className="font-bold px-10 py-2 fixed bg-slate-500 w-full rounded-b z-50 opacity-90">
+      <div className="flex flex-row-reverse items-center justify-between">
         <Link href="/">
           <Image
             className="rounded-full"
             src="http://placeimg.com/460/460/people"
             width={50}
-            height={50}
+            height={20}
             alt="logo"
           />
         </Link>
-        <h1>The Blog</h1>
-      </div>
-      <div>
-        <button className="px-5 py-3 text-sm md:text-base bg-gray-900 text-orange-500 flex items-center rounded-full text-center">
-          <Link
-            onClick={() => setToggle(!toggle)}
-            href={
-              toggle
-                ? "http://localhost:3000/api/preview"
-                : "http://localhost:3000/api/exit-preview"
-            }
-          >
-            Preview Mode
-          </Link>
-        </button>
+        <Link href="/">
+          <h1 className="text-[#E3E3E0]">The Blog</h1>
+        </Link>
       </div>
     </header>
   );
