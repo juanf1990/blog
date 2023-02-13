@@ -9,7 +9,7 @@ function Header() {
   const router = Router;
 
   return (
-    <header className="font-bold px-10 py-2 fixed bg-slate-500 w-full rounded-b z-50 opacity-90">
+    <header className="font-bold px-10 py-2 fixed bg-slate-500 w-full rounded-b z-50 opacity-90 max-w-7xl">
       <div className="flex flex-row-reverse items-center justify-between">
         <Link href="/">
           <Image
