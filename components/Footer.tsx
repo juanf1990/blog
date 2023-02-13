@@ -14,11 +14,7 @@ function Footer() {
         <button className="px-4 py-1 md:text-base bg-gray-900 text-orange-500 flex items-center rounded-full text-center text-xs">
           <Link
             onClick={() => setToggle(!toggle)}
-            href={
-              toggle
-                ? "http://localhost:3000/api/exit-preview"
-                : "http://localhost:3000/api/preview"
-            }
+            href={toggle ? "/api/exit-preview" : "/api/preview"}
           >
             Preview Mode
           </Link>
