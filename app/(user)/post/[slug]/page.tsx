@@ -54,7 +54,7 @@ async function Post({ params: { slug } }: Props) {
 
           <section className="p-5 w-full bg-[#F7AB0A]">
             <div className="flex flex-col md:flex-row justify-between gap-y-5">
-              <div>
+              <div className="flex flex-col justify-between">
                 <h1 className="text-4xl font-extrabold">{post.title}</h1>
                 <p>
                   {new Date(post._createdAt).toLocaleDateString("en-US", {
@@ -66,16 +66,18 @@ async function Post({ params: { slug } }: Props) {
               </div>
               <div className="flex items-center space-x-2">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full object-cover object-center mx-auto"
                   src={urlFor(post.author.image).url()}
                   alt={post.author.name}
-                  height={40}
-                  width={40}
+                  height={70}
+                  width={70}
                 />
-              </div>
-              <div className="w-64">
-                <h3 className="text-lg font-bold">{post.author.name}</h3>
-                <div>{/* TODO: Author BIO */}</div>
+                <div className="w-40">
+                  <h3 className="text-3xl font-bold text-center">
+                    {post.author.name}
+                  </h3>
+                  <div>{/* TODO: Author BIO */}</div>
+                </div>
               </div>
             </div>
 
