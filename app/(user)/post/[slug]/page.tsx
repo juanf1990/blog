@@ -81,7 +81,7 @@ async function Post({ params: { slug } }: Props) {
               </div>
             </div>
 
-            <div>
+            <div className="flex justify-between space-x-10">
               <h2 className="italic pt-10">{post.description}</h2>
               <div className="flex items-center justify-end mt-auto space-x-2">
                 {post.categories.map((category) => (
